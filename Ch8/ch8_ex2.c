@@ -1,3 +1,7 @@
+// Chapter 8, exercise 2 Programming in C by Stephen G. Kochan
+// Create a function to calculate elapsed number of days between two dates
+// By: boglinballet, Oct 1, 2018
+
 #include <stdio.h>
 #include <stdbool.h>
 
