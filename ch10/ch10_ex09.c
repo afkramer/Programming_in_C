@@ -17,7 +17,7 @@ int main(void)
 }
 
 // New syntax -- pointer to a character string
-// This works as expected
+// Version 1
 void read_line_new(char *buffer)
 {
     char character;
@@ -33,7 +33,7 @@ void read_line_new(char *buffer)
 }
 
 // New syntax take 2 -- pointer to a character string
-// Produces a segmentation fault!
+// Version 2
 void read_line_new_2(char *buffer)
 {
     char character;
@@ -42,6 +42,7 @@ void read_line_new_2(char *buffer)
     while (character != '\n')
     {
         *buffer++ = character;
+        character = getchar();
     }
     
     *buffer = '\0';
